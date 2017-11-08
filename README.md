@@ -5,7 +5,7 @@ Reproduction of needing to require unnecessary extern from platform-browser.js
 To reproduce:
 
 1. clone the repository
-2. install the ngr cli with `npm i -g angular-rollup` *rimraf may be needed as well
+2. install the ngr cli with `npm i -g angular-rollup`
 3. `npm install` all dependencies
 4. run the build `ngr build prod --verbose`
 5. see error in terminal
@@ -22,4 +22,4 @@ node_modules/packages/platform-browser/src/dom/util.js:38: ERROR - variable COMP
 7. run the build `ngr build prod --verbose`
 8. build finishes without errors
 
-This project assumes you have Java JDK already installed.
+This project assumes the Java JDK already installed.
